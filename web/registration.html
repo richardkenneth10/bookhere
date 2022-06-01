@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Book Here! | </title>
+
+    <!-- Bootstrap -->
+    <link href="vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <!-- NProgress -->
+    <link href="vendors/nprogress/nprogress.css" rel="stylesheet">
+    <!-- Animate.css -->
+    <link href="https://colorlib.com/polygon/gentelella/css/animate.min.css" rel="stylesheet">
+
+    <!-- Custom Theme Style -->
+    <link href="build/css/custom.min.css" rel="stylesheet">
+  </head>
+
+  <body class="login">
+    <div>
+      <a class="hiddenanchor" id="signup"></a>
+      <a class="hiddenanchor" id="signin"></a>
+
+      <div class="login_wrapper">
+        <div class="animate form login_form">
+          <section class="login_content">
+            <form method="POST" action="Router">
+              <h1>Registration Form</h1>
+              <div>
+                         <input type="text" id="exampleInputEmail1" class="form-control" name="business_name" placeholder="Business Name">
+                            <label for="exampleInputPassword1">Manager's Name</label>
+                            <input type="text" id="exampleInputPassword1" class="form-control" name="manager_name" placeholder="Manager's Name">
+                            <label>Email</label>
+                            <input type="text" id="exampleInputEmail1" class="form-control" name="email" placeholder="Email">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input type="password" id="exampleInputPassword1" class="form-control" name="password" placeholder="password">
+                            <label for="exampleInputPassword2">Confirm Password</label>
+                            <input type="password" id="exampleInputPassword2" class="form-control" name="password2" placeholder="Comfirm Password">
+                            <section>
+                                <h4>Business Information</h4>
+                            <label for="exampleInputPassword1">What Service Do you Offer</label>
+                            <input type="text" id="exampleInputservice" class="form-control" name="service" placeholder="Which Service?">
+<!--                            <label for="">Price</label>
+                            <input type="text" id="exampleInputprice" class="form-control" name="price" placeholder="In Naira">-->
+                            </section>
+                            <input name="origin" value="client_register" hidden/>
+                            <section>
+                                <h4>Business Location</h4>
+                            <label for="exampleInputstate">State</label>
+                            <input type="text" id="exampleInputPassword1" class="form-control" name="state" placeholder="State">
+                              <label for="exampleInputPassword1">Local Governmemt</label>
+                              <input type="text" id="exampleInputPassword1" class="form-control" name="lga" placeholder="Local Governmemt">
+                                <label for="exampleInputaddress">Address</label>
+                            <input type="text" id="exampleInputaddress" class="form-control" name="address" placeholder="Address">
+                            
+                            
+              <div>
+                  <button class="btn btn-default submit" type="submit">Sign Up</button>
+              </div>
+
+              <div class="clearfix"></div>
+
+              <div class="separator">
+                <p class="change_link">Old to site?
+                  <a href="clientLogin.jsp"> Login </a>
+                </p>
+
+                <div class="clearfix"></div>
+                <br />
+          <h1><i class="fa fa-paw"></i> BOOK HERE!</h1>
+                  <p>©2021 All Rights Reserved. UmehTech</p>
+                </div>
+              </div>
+            </form>
+          </section>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

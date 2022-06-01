@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>AdminLogin</servlet-name>
+        <servlet-class>adminservlet.AdminLogin</servlet-class>
+    </servlet>
+<!--    <servlet>
+        <servlet-name>ClientLogin</servlet-name>
+        <servlet-class>clientservlet.ClientLogin</servlet-class>
+    </servlet>-->
+    <servlet-mapping>
+        <servlet-name>AdminLogin</servlet-name>
+        <url-pattern>/admin/admin_login</url-pattern>
+    </servlet-mapping>
+<!--    <servlet-mapping>
+        <servlet-name>ClientLogin</servlet-name>
+        <url-pattern>/client/client_login</url-pattern>
+    </servlet-mapping>-->
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
